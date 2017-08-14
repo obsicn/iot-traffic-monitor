@@ -8,6 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
+import org.apache.spark.api.java.Optional;
 import org.apache.spark.api.java.function.Function;
 import org.apache.spark.api.java.function.Function3;
 import org.apache.spark.broadcast.Broadcast;
@@ -19,7 +20,6 @@ import org.apache.spark.streaming.api.java.JavaMapWithStateDStream;
 import org.apache.spark.streaming.api.java.JavaPairDStream;
 
 import com.datastax.spark.connector.japi.CassandraJavaUtil;
-import com.google.common.base.Optional;
 import com.iot.app.spark.entity.POITrafficData;
 import com.iot.app.spark.entity.TotalTrafficData;
 import com.iot.app.spark.entity.WindowTrafficData;
