@@ -3,7 +3,7 @@ import org.apache.spark.sql.SparkSession;
 
 public class SimpleApp {
   public static void main(String[] args) {
-    String logFile = "/data/opt/spark/README.md"; // Should be some file on your system
+    String logFile = "/spark/demo/README.md"; // Should be some file on your system
     SparkSession spark = SparkSession.builder().appName("Simple Application").getOrCreate();
     Dataset<String> logData = spark.read().textFile(logFile).cache();
 
